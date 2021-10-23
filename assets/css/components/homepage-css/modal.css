@@ -1,0 +1,210 @@
+/* Modal */
+#modal {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}#modal__layout {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+#modal__body {
+    position: relative;
+    margin: auto;
+    background-color: var(--white-color);
+    width: 380px;
+    z-index: 1;
+}
+.authen-form.-register-authen-form {
+    position: relative;
+    height: 400px;
+    display: none;
+}
+.authen-form.-login-authen-form {
+    position: relative;
+    height: 400px;
+    display: none;
+}
+.authen-form__container {
+    padding: 0px 22px;
+}
+.authen-form__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0;
+    margin: 32px 0px;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.header-caption {
+    width: 80px;
+    text-align: center;
+    margin: 0;
+    padding: 0px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+.authen-form__body {
+    display: flex;
+    flex-direction: column;
+}
+.authen-form__footer {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0px;
+}
+.authen-form__footer .button {
+    font-size: 1.4rem;
+}
+.authen-form__social {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding:6px 10px;
+}
+.button {
+    width: 100px;
+    padding:10px 0px;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.authen-form__header .button--login, .authen-form__header .button--register,
+.authen-form__footer .button--login, .authen-form__footer .button--register {
+    width: 100px;
+    padding:10px 0px;
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--slight-black-color);
+    font-size: 1.4rem;
+}
+button:hover {
+    opacity: 0.8;
+}
+.body-input {
+    font-size: 1.3rem;
+    height: 30px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding-bottom: 0px;
+    margin: 0 0 20px 0;
+    transition: border-color ease 1.2s;
+}
+.button--facebook, .button--google {
+    width: 100px;
+    flex: 1 0 auto;
+    margin: 6px;
+    padding:10px 0px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+.button--facebook {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+}
+.button--google {
+    background-color: var(--red-color);
+    color: var(--white-color);
+}
+.button--facebook .icons--facebook, .button--google .icons--google {
+    padding-right: 5px;
+}
+.body-support {
+    display: flex;
+    justify-content: flex-end;
+}
+.seperate {
+    margin: 0px 12px;
+    border: 0.1px solid var(--black-color);
+}
+.body-support__link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--black-color);
+}
+.text-field {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.text-field .body-input {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    margin: 0;
+    font-size: 1.4rem;
+    padding: 20px 0 20px 5px;
+}
+.text-field label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    transition: 0.5s ease;
+    transition: 0.5s;
+    font-size: 1.4rem;
+    pointer-events: none;
+}
+.text-field span {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+    background-color: var(--grey-white-color);
+    border-radius: 4px;
+}
+.text-field span::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    border-radius: 4px;
+    transition: 0.5s ease;
+}
+.text-field .body-input:focus ~ span::before,
+.text-field .body-input:valid ~ span::before {
+    background-color: var(--slight-black-color);
+    width: 100%;
+}
+.text-field .body-input:focus ~ label,
+.text-field .body-input:valid ~ label {
+    top: -5px;
+}
+.body-input:valid ~ span::after{
+    content: "✓";
+    display: inline-block;
+    position:absolute;
+    width: 10px;
+    height: 10px;
+    right: -15px;
+    bottom: 0;
+    color:var(--green-color);
+}
+.body-input:invalid ~ span::after {
+    content: "X";
+    display: inline-block;
+    position:absolute;
+    width: 10px;
+    height: 10px;
+    right: -15px;
+    bottom: 0;
+    color:var(--red-color);
+}
+

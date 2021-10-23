@@ -6,17 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/images/Icons/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/components/homepage-css/header.css">
+    <link rel="stylesheet" href="./assets/css/components/homepage-css/content.css">
+    <link rel="stylesheet" href="./assets/css/components/homepage-css/footer.css">
+    <link rel="stylesheet" href="./assets/css/components/homepage-css/modal.css">
     <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/components/header.css">
-    <link rel="stylesheet" href="./assets/css/components/modal.css">
-    <link rel="stylesheet" href="./assets/css/components/content.css">
-    <link rel="stylesheet" href="./assets/css/components/footer.css">
-    <script type="module" src="./assets/js/main.js"></script>
-    <title>Document</title>
-</head profile="http://www.w3.org/2005/10/profile">
-<link rel="icon" 
-      type="image/png" 
-      href="http://example.com/myicon.png">
+    <script type="module" src="./assets/js/components/homepage-js/main.js"></script>
+    <title>Homepage</title>
+</head>
 <body>
     <div class="container">
         <!-- Header -->
@@ -42,10 +39,10 @@
                                 </div>
                             </div>
                             <div class="menu-components-container__items">
-                                <p>Notification</p> 
+                                <p>Notification</p>
                             </div>
                             <div class="menu-components-container__items button--register">
-                                <p>Register</p> 
+                                <p>Register</p>
                             </div>
                             <div class="menu-components-container__items button--login">
                                 <p>Login</p>
@@ -75,7 +72,7 @@
                         <li class="list__items"><button type="button" class="button--nav button--login">Login</button></li>
                         <!-- <li class="list__items">
                             <div id="user-avatar">
-                                <img src="./images/avatar-user.jfif" class="user-image"alt="user-avatar">
+                                <img src="./images/homepage-images/avatar-user.jfif" class="user-image"alt="user-avatar">
                                 <p class="user-name">TriPham</p>
                             </div>
                             <div id="user-menu">
@@ -96,7 +93,7 @@
                                 </div>
                                 <div class="list">
                                     <div class="news">
-                                        <img src="./assets/images/pictures/notification.png" alt="" class="image">
+                                        <img src="./assets/images/pictures/homepage-images/notification.png" alt="" class="image">
                                         <div class="news__description">
                                             <p class="news__title">There are currently no new announcements</p>
                                         </div>
@@ -117,7 +114,7 @@
                                 <div class="list">
                                     <div class="book-container">
                                         <a href="javascript:" class="book">
-                                            <img src="./assets/images/pictures/doraemon-episode-1.png" class="image">
+                                            <img src="./assets/images/pictures/homepage-images/doraemon-episode-1.png" class="image">
                                             <div class="book__description">
                                                 <p class="book__title">doraemon episode 1</p>
                                                 <p class="book__price">18.000đ</p>
@@ -127,7 +124,7 @@
                                     </div>
                                     <div class="book-container">
                                         <a href="javascript:" class="book">
-                                            <img src="./assets/images/pictures/doraemon-episode-23.png" class="image">
+                                            <img src="./assets/images/pictures/homepage-images/doraemon-episode-23.png" class="image">
                                             <div class="book__description">
                                                 <p class="book__title">doraemon episode 1</p>
                                                 <p class="book__price">18.000đ</p>
@@ -148,7 +145,7 @@
             </div>
         </header>
         <div class="content">
-            <div class="grid">  
+            <div class="grid">
                 <div class="row">
                     <div class="side-bar-container col l-3 s-12 mm-12">
                         <!-- Side bar -->
@@ -196,13 +193,13 @@
                                 <input type="radio" name="radio" id="radio2">
                                 <input type="radio" name="radio" id="radio3">
                                 <div class="slide first">
-                                    <img src="./assets/images/pictures/slider-1-banner-1.png" alt="">
+                                    <img src="./assets/images/pictures/homepage-images/slider/slider-1-banner-1.png" alt="">
                                 </div>
                                 <div class="slide">
-                                    <img src="./assets/images/pictures/slider-1-banner-2.png" alt="">
+                                    <img src="./assets/images/pictures/homepage-images/slider/slider-1-banner-2.png" alt="">
                                 </div>
                                 <div class="slide">
-                                    <img src="./assets/images/pictures/slider-1-banner-3.png" alt="">
+                                    <img src="./assets/images/pictures/homepage-images/slider/slider-1-banner-3.png" alt="">
                                 </div>
                             </div>
                                 <!-- Manual navigation -->
@@ -216,13 +213,6 @@
                 </div>
                 <!-- Best seller category -->
                 <div class="best-seller row">
-                    <!-- <div class="col l-12">
-                        <div id="nav-bar-body">
-                            <span id="nav-bar-body__header">Sort by</span>
-                            <a href="" class="nav-bar-body__item">Best seller books</a>
-                            <a href=""class="nav-bar-body__item">Highest rate books</a>
-                        </div>
-                    </div> -->
                     <div class="book-selling-container col l-12">
                         <div class="book-selling-header">
                             <div class="description">
@@ -236,7 +226,7 @@
                         <div class="book-selling-body">
                             <!-- <div class="item col l-20-percent m-4">
                                 <a href="" class="book">
-                                    <img src="./assets/images/pictures/harry-potter-va-hoang-tu-lai.jpg" alt="harry-potter-va-hoang-tu-lai" class="book__image">
+                                    <img src="./assets/images/pictures/homepage-images/harry-potter-va-hoang-tu-lai.jpg" alt="harry-potter-va-hoang-tu-lai" class="book__image">
                                     <div class="book__description">
                                         <div class="book__title">Harry Potter và Hoàng Tử Lai</div>
                                     </div>
@@ -267,28 +257,28 @@
                             <div class="slider slider-2 l-12">
                                 <div class="highest-rate-slides">
                                     <a class="slide"id="last">
-                                        <img src="./assets/images/pictures/slider-2-banner-3.png">
+                                        <img src="./assets/images/pictures/homepage-images/banner/slider-2-banner-3.png">
                                     </a>
                                     <a href="" class="slide">
-                                        <img src="./assets/images/pictures/slider-2-banner-4.png">
+                                        <img src="./assets/images/pictures/homepage-images/banner/slider-2-banner-4.png">
                                     </a>
                                     <a href="" class="slide">
-                                        <img src="./assets/images/pictures/slider-2-banner-1.png">
+                                        <img src="./assets/images/pictures/homepage-images/banner/slider-2-banner-1.png">
                                     </a>
                                     <a href="" class="slide">
-                                        <img src="./assets/images/pictures/slider-2-banner-2.png">
+                                        <img src="./assets/images/pictures/homepage-images/banner/slider-2-banner-2.png">
                                     </a>
                                     <a href="" class="slide">
-                                        <img src="./assets/images/pictures/slider-2-banner-3.png">
+                                        <img src="./assets/images/pictures/homepage-images/banner/slider-2-banner-3.png">
                                     </a>
                                     <a href="" class="slide">
-                                        <img src="./assets/images/pictures/slider-2-banner-4.png">
+                                        <img src="./assets/images/pictures/homepage-images/banner/slider-2-banner-4.png">
                                     </a>
                                     <a href="" class="slide"id="first">
-                                        <img src="./assets/images/pictures/slider-2-banner-1.png">
+                                        <img src="./assets/images/pictures/homepage-images/banner/slider-2-banner-1.png">
                                     </a>
                                     <a href="" class="slide">
-                                        <img src="./assets/images/pictures/slider-2-banner-2.png">
+                                        <img src="./assets/images/pictures/homepage-images/banner/slider-2-banner-2.png">
                                     </a>
                                 </div>
                             </div>
@@ -320,7 +310,7 @@
                         <div id="banner-1-body">
                             <div id="section-1" class="col l-5 s-12 mm-12">
                                 <div id="section-1__container">
-                                    <img src="./assets/images/pictures/khong-ai-co-the-lam-ban-ton-thuong-tru-khi-ban-cho-phep.png">
+                                    <img src="./assets/images/pictures/homepage-images/khong-ai-co-the-lam-ban-ton-thuong-tru-khi-ban-cho-phep.png">
                                     <div class="section-description">
                                         <p class="title">Không ai có thể làm bạn tổn thương trừ khi bạn cho phép</p>
                                         <p class="price">50.000đ</p>
@@ -332,7 +322,7 @@
                             </div>
                             <div id="section-2-and-section-3" class="col l-7 s-12 mm-12">
                                 <div id="section-2__container">
-                                    <img src="./assets/images/pictures/làm-the-nao-de-song-1-doi-tot-dep.png">
+                                    <img src="./assets/images/pictures/homepage-images/làm-the-nao-de-song-1-doi-tot-dep.png">
                                     <div class="section-description">
                                         <p class="tilte">Làm thế nào để sống 1 đời tốt đẹp</p>
                                         <p class="price">50000đ</p>
@@ -342,7 +332,7 @@
                                     </div>
                                 </div>
                                 <div id="section-3__container">
-                                    <img src="./assets/images/pictures/tam-ly-hoc-hanh-vi.png">
+                                    <img src="./assets/images/pictures/homepage-images/tam-ly-hoc-hanh-vi.png">
                                     <div class="section-description">
                                         <p class="tilte">Tâm lý học hành vi</p>
                                         <p class="price">50000đ</p>
@@ -376,12 +366,12 @@
         <footer class="footer">
             <div class="grid">
                 <div class="footer-container row">
-                    <div class="footer-header col l-12">
+                    <div class="footer-header col">
                         <p class="brand-name"><b>Smart Bird</b></p>
                         <p class="brand-name">Free contact to us</p>
                     </div>
-                    <ul class="footer-body col l-12">
-                        <li> 
+                    <ul class="footer-body col">
+                        <li>
                             <div class="button--support">Support</div>
                             <div class="side-infomation"><a>https://blabla.com</a></div>
                         </li>
@@ -400,7 +390,7 @@
                              </div>
                         </li>
                     </ul>
-                </div>  
+                </div>
             </div>
         </footer>
     </div>

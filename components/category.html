@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/images/Icons/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/components/homepage-css/header.css">
+    <link rel="stylesheet" href="/assets/css/components/homepage-css/modal.css">
+    <link rel="stylesheet" href="/assets/css/components/homepage-css/content.css">
+    <link rel="stylesheet" href="/assets/css/components/homepage-css/footer.css">
+    <link rel="stylesheet" href="/assets/css/components/category-css/content.css">
+    <script type="module" src="/assets/js/components/category-js/main.js"></script>
+    <title>Category</title>     
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="grid grid--flex">
+                <!-- Menu -->
+                <div class="menu">
+                    <div class="toggle">
+                        <span class="button--menu"><i class="fas fa-bars"></i></span>
+                        <span class="button--close"><i class="fas fa-times"></i></span>
+                    </div>
+                    <div class="menu-components">
+                        <div class="menu-components-container grid">
+                            <div class="menu-components-container__items">
+                                <div class="search-bar" id="second-search-bar">
+                                    <div class="input-text">
+                                        <i class="fas fa-search icons--search"></i>
+                                        <input type="text" placeholder="Enter keyword">
+                                        <i class="far fa-times-circle icons--erase"></i>
+                                        <ul class="input-text__autocom-box">
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-components-container__items">
+                                <p>Notification</p> 
+                            </div>
+                            <div class="menu-components-container__items button--register">
+                                <p>Register</p> 
+                            </div>
+                            <div class="menu-components-container__items button--login">
+                                <p>Login</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Logo -->
+                <div class="logo">
+                    <i class="fas fa-kiwi-bird icons--bird"></i>
+                    <h2 class="logo__word">SMART BIRD</h2>
+                </div>
+                <!-- Search bar -->
+                <div class="search-bar" id="first-search-bar">
+                    <div class="input-text">
+                        <i class="fas fa-search icons--search"></i>
+                        <input type="text" placeholder="Enter keyword">
+                        <i class="far fa-times-circle icons--erase"></i>
+                        <ul class="input-text__autocom-box">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Navigation bar -->
+                <nav id="nav-bar">
+                    <ul class="list">
+                        <li class="list__items"><button type="button" class="button--nav button--register">Register</button></li>
+                        <li class="list__items"><button type="button" class="button--nav button--login">Login</button></li>
+                        <!-- <li class="list__items">
+                            <div id="user-avatar">
+                                <img src="./images/avatar-user.jfif" class="user-image"alt="user-avatar">
+                                <p class="user-name">TriPham</p>
+                            </div>
+                            <div id="user-menu">
+                                <a href="" id="user-profile">Tài khoản của tôi</a>
+                                <a href="" id="user-order">Đơn mua</a>
+                                <a href="" id="user-log-out">Đăng xuất</a>
+                            </div>
+                        </li> -->
+                        <li class="list__items">
+                            <button class="button--notify">
+                                <i class="fas fa-bell icons--notify"></i>
+                            </button>
+                            <!-- New notification -->
+                            <div id="new-notify">
+                                <div class="header">
+                                    <h3>Notification</h3>
+                                    <hr>
+                                </div>
+                                <div class="list">
+                                    <div class="news">
+                                        <img src="/assets/images/pictures/category-images/notification.png" alt="" class="image">
+                                        <div class="news__description">
+                                            <p class="news__title">There are currently no new announcements</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list__items">
+                            <button class="button--cart">
+                                <i class="fas fa-shopping-cart icons--shopping"></i>
+                            </button>
+                            <!-- Cart notification -->
+                            <div id="cart-notify">
+                                <div class="header">
+                                    <h3>Your cart</h3>
+                                    <hr>
+                                </div>
+                                <div class="list">
+                                    <div class="book-container">
+                                        <a href="javascript:" class="book">
+                                            <img src="/assets/images/pictures/category-images/doraemon-episode-1.png" class="image">
+                                            <div class="book__description">
+                                                <p class="book__title">doraemon episode 1</p>
+                                                <p class="book__price">18.000đ</p>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:" class="book--take-out"><i class="far fa-times-circle"></i></a>
+                                    </div>
+                                    <div class="book-container">
+                                        <a href="javascript:" class="book">
+                                            <img src="/assets/images/pictures/category-images/doraemon-episode-23.png" class="image">
+                                            <div class="book__description">
+                                                <p class="book__title">doraemon episode 1</p>
+                                                <p class="book__price">18.000đ</p>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:" class="book--take-out"><i class="far fa-times-circle"></i></a>
+                                    </div>
+                                </div>
+                                <div id="cart-notify__total">
+                                    <hr>
+                                    <h3>Total cost</h3>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+        </header>
+        <div class="content">
+            <div class="grid">
+                <div class="row">
+                    <!-- Category selection -->
+                    <div class="category-selection col">
+                        <div class="category-selection-container">
+                            <ul class="category-selection-wrapper">
+                                <li class="category-selection-wrapper__fields">Funny</li>
+                                <li class="category-selection-wrapper__fields">Romantic</li>
+                                <li class="category-selection-wrapper__fields">Adventure</li>
+                                <li class="category-selection-wrapper__fields">Fantasy</li>
+                                <li class="category-selection-wrapper__fields">Horror</li>
+                                <li class="category-selection-wrapper__fields">Detective</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Banner -->
+                    <div class="banner col">
+                        <div class="banner-container">
+                            <div class="banner-wrapper">
+                                <img src="/assets/images/pictures/category-images/banner/feature-book.png" alt="" class="banner-wrapper__picture">
+                                <h3 class="banner-wrapper__words">Feature Books</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- New book for this month -->
+                <div class="row">
+                    <div class="new-book-slider col">
+                        <div class="new-book-slider-container">
+                            <div class="new-book-slider-wrapper">
+                                <h3 class="new-book-slider-wrapper__header">New books <span>for this month.</span></h3>
+                                <div class="new-book-slider-wrapper__slider">
+                                    <div class="new-book-slider-wrapper__slider__button">
+                                        <button type="button" id="button-arrow-left"><i class="fas fa-angle-left"></i></button>
+                                        <button type="button" id="button-arrow-right"><i class="fas fa-angle-right"></i></button>
+                                    </div>
+                                    <div class="new-book-slider-wrapper__slider__slides">
+                                        <!-- New book items -->
+                                        <div class="invisible-block"></div>
+                                        <!-- item 1 -->
+                                        <div class="new-book-slider-wrapper__slider__slides__slide">
+                                            <div class="new-book-slider-wrapper__slider__slides__slide__header">
+                                                <p class="new">New</p>
+                                                <p class="brand">Smart Bird</p>
+                                            </div>
+                                            <div class="new-book-slider-wrapper__slider__slides__slide__content">
+                                                <img src="/assets/images/pictures/category-images/slider/rich-habits-poor-habits.png" alt="">
+                                                <p class="book-description">Rich habits poor habits</p>
+                                            </div>
+                                            <div class="new-book-slider-wrapper__slider__slides__slide__footer">
+                                                <p class="book-price">50000 <b>đ</b></p>
+                                                <button class="button-buy">Buy Now</button>
+                                            </div>
+                                        </div>
+                                        <!-- item 2 -->
+                                        <div class="new-book-slider-wrapper__slider__slides__slide">
+                                            <div class="new-book-slider-wrapper__slider__slides__slide__header">
+                                                <p class="new">New</p>
+                                                <p class="brand">Smart Bird</p>
+                                            </div>
+                                            <div class="new-book-slider-wrapper__slider__slides__slide__content">
+                                                <img src="/assets/images/pictures/category-images/slider/light.jpg" alt="">
+                                                <p class="book-description">Light</p>
+                                            </div>
+                                            <div class="new-book-slider-wrapper__slider__slides__slide__footer">
+                                                <p class="book-price">50000 <b>đ</b></p>
+                                                <button class="button-buy">Buy Now</button>
+                                            </div>
+                                        </div>
+                                        <!-- item 3 -->
+                                        <div class="new-book-slider-wrapper__slider__slides__slide">
+                                            <div class="new-book-slider-wrapper__slider__slides__slide__header">
+                                                <p class="new">New</p>
+                                                <p class="brand">Smart Bird</p>
+                                            </div>
+                                            <div class="new-book-slider-wrapper__slider__slides__slide__content">
+                                                <img src="/assets/images/pictures/category-images/slider/tam-ly-hoc-hanh-vi.png" alt="">
+                                                <p class="book-description">Tâm lý học hành vi</p>
+                                            </div>
+                                            <div class="new-book-slider-wrapper__slider__slides__slide__footer">
+                                                <p class="book-price">50000 <b>đ</b></p>
+                                                <button class="button-buy">Buy Now</button>
+                                            </div>
+                                        </div>
+                                        <!-- item 4 -->
+                                        <div class="new-book-slider-wrapper__slider__slides__slide">
+                                            <div class="new-book-slider-wrapper__slider__slides__slide__header">
+                                                <p class="new">New</p>
+                                                <p class="brand">Smart Bird</p>
+                                            </div>
+                                            <div class="new-book-slider-wrapper__slider__slides__slide__content">
+                                                <img src="/assets/images/pictures/category-images/slider/khong-ai-co-the-lam-ban-ton-thuong-tru-khi-ban-cho-phep.png" alt="">
+                                                <p class="book-description">Không ai có thể làm ban...</p>
+                                            </div>
+                                            <div class="new-book-slider-wrapper__slider__slides__slide__footer">
+                                                <p class="book-price">50000 <b>đ</b></p>
+                                                <button class="button-buy">Buy Now</button>
+                                            </div>
+                                        </div>
+                                        <!-- item 5 -->
+                                        <div class="new-book-slider-wrapper__slider__slides__slide">
+                                            <div class="new-book-slider-wrapper__slider__slides__slide__header">
+                                                <p class="new">New</p>
+                                                <p class="brand">Smart Bird</p>
+                                            </div>
+                                            <div class="new-book-slider-wrapper__slider__slides__slide__content">
+                                                <img src="/assets/images/pictures/category-images/slider/roi-mot-ngay-ban-se-hieu.png" alt="">
+                                                <p class="book-description">Rồi một ngày bạn sẽ hiểu</p>
+                                            </div>
+                                            <div class="new-book-slider-wrapper__slider__slides__slide__footer">
+                                                <p class="book-price">50000 <b>đ</b></p>
+                                                <button class="button-buy">Buy Now</button>
+                                            </div>
+                                        </div>
+                                        <!-- item 6 -->
+                                        <div class="new-book-slider-wrapper__slider__slides__slide">
+                                            <div class="new-book-slider-wrapper__slider__slides__slide__header">
+                                                <p class="new">New</p>
+                                                <p class="brand">Smart Bird</p>
+                                            </div>
+                                            <div class="new-book-slider-wrapper__slider__slides__slide__content">
+                                                <img src="/assets/images/pictures/category-images/slider/moi-nguoi-deu-noi-doi.png" alt="">
+                                                <p class="book-description">Mọi người đều nói dối</p>
+                                            </div>
+                                            <div class="new-book-slider-wrapper__slider__slides__slide__footer">
+                                                <p class="book-price">50000 <b>đ</b></p>
+                                                <button class="button-buy">Buy Now</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="classification-bar col">
+                        <div class="classification-bar-container">
+                            <ul class="classification-bar-wrapper">
+                                <li class="classification-bar-wrapper__fields">All</li>
+                                <li class="classification-bar-wrapper__fields">New Product</li>
+                                <li class="classification-bar-wrapper__fields">Best seller</li>
+                                <li class="classification-bar-wrapper__fields">Sort By</li>
+                                <li class="classification-bar-wrapper__fields sort-bar">
+                                    <div class="selected-box">
+                                        <div class="selected-box-container">
+                                           <div class="selected-box-container__header">
+                                               <div class="selected-default">
+                                               </div>
+                                               <i class="fas fa-sort-down"></i>
+                                           </div>
+                                           <div class="selected-box-container__body">
+                                               <div class="options">
+                                                    <input type="radio" id="asc" class="options__category" name="options__selected">
+                                                    <label for="asc">Ascending</label>
+                                               </div>
+                                               <div class="options">
+                                                    <input type="radio" id="desc" class="options__category" name="options__selected">
+                                                    <label for="desc">Descending</label>
+                                               </div>
+                                           </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Category books -->
+                <div class="category-books row">
+                    <div class="book-selling-container col l-12">
+                        <div class="book-selling-header">
+                            <div class="description">
+                                <b>Category </b>books
+                            </div>
+                            <span class="line"></span>  
+                            <div class="description">
+                                <a href="">All</a>
+                            </div>
+                        </div>
+                        <div class="book-selling-body">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="grid">
+                <div class="footer-container row">
+                    <div class="footer-header col">
+                        <p class="brand-name"><b>Smart Bird</b></p>
+                        <p class="brand-name">Free contact to us</p>
+                    </div>
+                    <ul class="footer-body col">
+                        <li>
+                            <div class="button--support">Support</div>
+                            <div class="side-infomation"><a>https://blabla.com</a></div>
+                        </li>
+                        <li>
+                             <div class="button--support">Contact</div>
+                             <div class="side-infomation">
+                                 <a href="" class="side-social-links"><i class="fab fa-facebook"></i></a>
+                                 <a href="" class="side-social-links"><i class="fab fa-twitter-square"></i></a>
+                                 <a href="" class="side-social-links"><i class="fab fa-instagram-square"></i></a>
+                             </div>
+                        </li>
+                        <li>
+                             <div class="button--support">Our phone number</div>
+                             <div class="side-infomation">
+                                 <p>+0909999999</p>
+                             </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Modal -->
+    <div id="modal">
+        <div id="modal__layout">
+        </div>
+        <div id="modal__body">
+            <!-- Register form -->
+            <form class="authen-form -register-authen-form">
+                <div class="authen-form__container">
+                    <div class="authen-form__header">
+                        <h3 class="header-caption">Register</h3>
+                        <button type="button" name="button" class="button--login -background-white -align-right">Login</button>
+                    </div>
+                    <div class="authen-form__body">
+                        <div class="text-field">
+                            <input type="text" class="body-input" name="account" value="account" required>
+                            <label>Enter your account</label>
+                            <span></span>
+                        </div>
+                        <div class="text-field">
+                            <input type="password" class="body-input" name="password" value="password" minlength="8" maxlength="12" required>
+                            <label>Enter your password</label>
+                            <span></span>
+                        </div>
+                        <div class="text-field">
+                            <input type="password" class="body-input" name="re-password" value="re-password" required>
+                            <label>Enter your password again</label>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="authen-form__footer">
+                        <button type="button" class="button">Return</button>
+                        <button type="submit" class="button--register">Register</button>
+                    </div>
+                </div>
+                <div class="authen-form__social">
+                    <button type="button" class="button--facebook"><i class="fab fa-facebook icons--facebook"></i>Login with Facebook</button>
+                    <button type="button" class="button--google"><i class="fab fa-google icons--google"></i>Login with Google</button>
+                </div>
+            </form>
+            <!-- Login form -->
+            <form action="" class="authen-form -login-authen-form">
+                <div class="authen-form__container">
+                    <div class="authen-form__header">
+                        <h3 class="header-caption">Login</h3>
+                        <button type="button" name="button" class="button--register -background-white -align-right">Register</button>
+                    </div>
+                    <div class="authen-form__body">
+                        <div class="text-field">
+                            <input type="text" class="body-input" name="account" value="account" required>
+                            <label>Account</label>
+                            <span></span>
+                        </div>
+                        <div class="text-field">
+                            <input type="password" class="body-input" name="password" value="password" required>
+                            <label>Password</label>
+                            <span></span>
+                        </div>
+                        <div class="body-support">
+                            <a href="" class="body-support__link">Forgot your password</a>
+                            <span class="seperate"></span>
+                            <a href="" class="body-support__link">Support?</a>
+                        </div>
+                    </div>
+                    <div class="authen-form__footer">
+                        <button type="button" class="button">Return</button>
+                        <button type="submit" class="button--login">Login</button>
+                    </div>
+                </div>
+                <div class="authen-form__social">
+                    <button type="button" class="button--facebook"><i class="fab fa-facebook icons--facebook"></i>Login with Facebook</button>
+                    <button type="button" class="button--google"><i class="fab fa-google icons--google"></i>Login with Google</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
