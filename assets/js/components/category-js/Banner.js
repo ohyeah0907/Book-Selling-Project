@@ -1,9 +1,9 @@
 function Banner() {
     const slide = document.querySelectorAll(".new-book-slider-wrapper__slider__slides__slide");
     const slides = document.querySelector(".new-book-slider-wrapper__slider__slides");
-
     let count = 0;
     let length = 0;
+
     if(document.body.clientWidth >= 1024)
         length = 4;
     else if (document.body.clientWidth >= 840 && document.body.clientWidth <= 1023)
@@ -11,6 +11,7 @@ function Banner() {
     else if (document.body.clientWidth <= 839)
         length = 2;
     console.log(length);
+    
     window.addEventListener("resize", () => {
         slides.style.marginLeft = "0px";
         count = 0;

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/images/Icons/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/components/homepage-css/header.css">
+    <link rel="stylesheet" href="/assets/css/components/homepage-css/modal.css">
+    <link rel="stylesheet" href="/assets/css/components/homepage-css/footer.css">
+    <link rel="stylesheet" href="/assets/css/components/category-css/content.css">
+    <link rel="stylesheet" href="/assets/css/components/category-css/content.css">
+    <link rel="stylesheet" href="/assets/css/components/detail-cart.css/content.css">
+    <script type="module" src="/assets/js/components/detail-cart.js/main.js"></script>
+    <title>Detail cart</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="grid grid--flex">
+                <!-- Menu -->
+                <div class="menu">
+                    <div class="toggle">
+                        <span class="button--menu"><i class="fas fa-bars"></i></span>
+                        <span class="button--close"><i class="fas fa-times"></i></span>
+                    </div>
+                    <div class="menu-components">
+                        <div class="menu-components-container grid">
+                            <div class="menu-components-container__items">
+                                <div class="search-bar" id="second-search-bar">
+                                    <div class="input-text">
+                                        <i class="fas fa-search icons--search"></i>
+                                        <input type="text" placeholder="Enter keyword">
+                                        <i class="far fa-times-circle icons--erase"></i>
+                                        <ul class="input-text__autocom-box">
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-components-container__items">
+                                <p>Notification</p> 
+                            </div>
+                            <div class="menu-components-container__items button--register">
+                                <p>Register</p> 
+                            </div>
+                            <div class="menu-components-container__items button--login">
+                                <p>Login</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Logo -->
+                <div class="logo">
+                    <i class="fas fa-kiwi-bird icons--bird"></i>
+                    <h2 class="logo__word">SMART BIRD</h2>
+                </div>
+                <!-- Search bar -->
+                <div class="search-bar" id="first-search-bar">
+                    <div class="input-text">
+                        <i class="fas fa-search icons--search"></i>
+                        <input type="text" placeholder="Enter keyword">
+                        <i class="far fa-times-circle icons--erase"></i>
+                        <ul class="input-text__autocom-box">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Navigation bar -->
+                <nav id="nav-bar">
+                    <ul class="list">
+                        <li class="list__items"><button type="button" class="button--nav button--register">Register</button></li>
+                        <li class="list__items"><button type="button" class="button--nav button--login">Login</button></li>
+                        <!-- <li class="list__items">
+                            <div id="user-avatar">
+                                <img src="./images/avatar-user.jfif" class="user-image"alt="user-avatar">
+                                <p class="user-name">TriPham</p>
+                            </div>
+                            <div id="user-menu">
+                                <a href="" id="user-profile">Tài khoản của tôi</a>
+                                <a href="" id="user-order">Đơn mua</a>
+                                <a href="" id="user-log-out">Đăng xuất</a>
+                            </div>
+                        </li> -->
+                        <li class="list__items">
+                            <button class="button--notify">
+                                <i class="fas fa-bell icons--notify"></i>
+                            </button>
+                            <!-- New notification -->
+                            <div id="new-notify">
+                                <div class="header">
+                                    <h3>Notification</h3>
+                                    <hr>
+                                </div>
+                                <div class="list">
+                                    <div class="news">
+                                        <img src="/assets/images/pictures/category-images/notification.png" alt="" class="image">
+                                        <div class="news__description">
+                                            <p class="news__title">There are currently no new announcements</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list__items">
+                            <button class="button--cart">
+                                <i class="fas fa-shopping-cart icons--shopping"></i>
+                            </button>
+                            <!-- Cart notification -->
+                            <div id="cart-notify">
+                                <div class="header">
+                                    <h3>Your cart</h3>
+                                    <hr>
+                                </div>
+                                <div class="list">
+                                    <div class="book-container">
+                                        <a href="javascript:" class="book">
+                                            <img src="/assets/images/pictures/category-images/doraemon-episode-1.png" class="image">
+                                            <div class="book__description">
+                                                <p class="book__title">doraemon episode 1</p>
+                                                <p class="book__price">18.000đ</p>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:" class="book--take-out"><i class="far fa-times-circle"></i></a>
+                                    </div>
+                                    <div class="book-container">
+                                        <a href="javascript:" class="book">
+                                            <img src="/assets/images/pictures/category-images/doraemon-episode-23.png" class="image">
+                                            <div class="book__description">
+                                                <p class="book__title">doraemon episode 1</p>
+                                                <p class="book__price">18.000đ</p>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:" class="book--take-out"><i class="far fa-times-circle"></i></a>
+                                    </div>
+                                </div>
+                                <div id="cart-notify__total">
+                                    <hr>
+                                    <h3>Total cost</h3>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="content">
+            <div class="grid">
+                <div class="row">
+                     <!-- Category selection -->
+                     <div class="category-selection col l-12 m-12">
+                        <div class="category-selection-container">
+                            <ul class="category-selection-wrapper">
+                                <li class="category-selection-wrapper__fields">Funny</li>
+                                <li class="category-selection-wrapper__fields">Romantic</li>
+                                <li class="category-selection-wrapper__fields">Adventure</li>
+                                <li class="category-selection-wrapper__fields">Fantasy</li>
+                                <li class="category-selection-wrapper__fields">Horror</li>
+                                <li class="category-selection-wrapper__fields">Detective</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="detail-order col l-8">
+                        <div class="detail-order-container">
+                            <ul class="detail-order-wrapper">
+                                <li class="item-product-cart">
+                                    <div class="image-product-cart">
+                                        <a href=""><img src="/assets/images/pictures/category-images/slider/khong-ai-co-the-lam-ban-ton-thuong-tru-khi-ban-cho-phep.png" alt=""></a>
+                                    </div>
+                                    <div class="group-product-info">
+                                        <div class="info-product">
+                                            <div class="info-product__description">
+                                                <span>Không ai có thể làm bạn tổn thương trừ khi bạn cho phép</span>
+                                            </div>
+                                            <span class="info-product__price">50000 <b>đ</b></span>
+                                        </div>
+                                        <div class="number-product-info">
+                                            <div class="quantity-box">
+                                                <a href="" class="quantity-box__increase"><i class="fas fa-minus"></i></a>
+                                                <input type="text">
+                                                <a href="" class="quantity-box__decrease"><i class="fas fa-plus"></i></a>
+                                            </div>
+                                            <div class="cart-price-total">
+                                                <span>50000 <b>đ</b></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="button--remove-cart">
+                                        <a href=""><i class="fas fa-times"></i></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="detail-bill col l-4">
+                        <div class="detail-bill-container">
+                            <div class="detail-bill-wrapper">
+                                <div class="detail-bill-title">
+                                    <h3>Smart Bird</h3>
+                                </div>
+                                <div class="detail-bill-total-cart">
+                                    <div class="detail-bill-total-cart__provisional">
+                                        <h3>Provisional:</h3>
+                                        <span class="detail-bill-total-cart__provisional__price">50000 <b>đ</b></span>
+                                    </div>
+                                    <div class="detail-bill-total-cart__discount">
+                                        <h3>Discout:</h3>
+                                        <span class="detail-bill-total-cart__discount__price"></span>
+                                    </div>
+                                    <div class="detail-bill-total-cart__total">
+                                        <h3>Total:</h3>
+                                        <span class="detail-bill-total-cart__total__price">50000 <b>đ</b></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal">
+            <div id="modal__layout">
+            </div>
+            <div id="modal__body">
+                <!-- Register form -->
+                <form class="authen-form -register-authen-form">
+                    <div class="authen-form__container">
+                        <div class="authen-form__header">
+                            <h3 class="header-caption">Register</h3>
+                            <button type="button" name="button" class="button--login -background-white -align-right">Login</button>
+                        </div>
+                        <div class="authen-form__body">
+                            <div class="text-field">
+                                <input type="text" class="body-input" name="account" value="account" required>
+                                <label>Enter your account</label>
+                                <span></span>
+                            </div>
+                            <div class="text-field">
+                                <input type="password" class="body-input" name="password" value="password" minlength="8" maxlength="12" required>
+                                <label>Enter your password</label>
+                                <span></span>
+                            </div>
+                            <div class="text-field">
+                                <input type="password" class="body-input" name="re-password" value="re-password" required>
+                                <label>Enter your password again</label>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="authen-form__footer">
+                            <button type="button" class="button">Return</button>
+                            <button type="submit" class="button--register">Register</button>
+                        </div>
+                    </div>
+                    <div class="authen-form__social">
+                        <button type="button" class="button--facebook"><i class="fab fa-facebook icons--facebook"></i>Login with Facebook</button>
+                        <button type="button" class="button--google"><i class="fab fa-google icons--google"></i>Login with Google</button>
+                    </div>
+                </form>
+                <!-- Login form -->
+                <form action="" class="authen-form -login-authen-form">
+                    <div class="authen-form__container">
+                        <div class="authen-form__header">
+                            <h3 class="header-caption">Login</h3>
+                            <button type="button" name="button" class="button--register -background-white -align-right">Register</button>
+                        </div>
+                        <div class="authen-form__body">
+                            <div class="text-field">
+                                <input type="text" class="body-input" name="account" value="account" required>
+                                <label>Account</label>
+                                <span></span>
+                            </div>
+                            <div class="text-field">
+                                <input type="password" class="body-input" name="password" value="password" required>
+                                <label>Password</label>
+                                <span></span>
+                            </div>
+                            <div class="body-support">
+                                <a href="" class="body-support__link">Forgot your password</a>
+                                <span class="seperate"></span>
+                                <a href="" class="body-support__link">Support?</a>
+                            </div>
+                        </div>
+                        <div class="authen-form__footer">
+                            <button type="button" class="button">Return</button>
+                            <button type="submit" class="button--login">Login</button>
+                        </div>
+                    </div>
+                    <div class="authen-form__social">
+                        <button type="button" class="button--facebook"><i class="fab fa-facebook icons--facebook"></i>Login with Facebook</button>
+                        <button type="button" class="button--google"><i class="fab fa-google icons--google"></i>Login with Google</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
