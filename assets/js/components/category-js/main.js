@@ -1,5 +1,5 @@
 import * as dropDown from "./DropDown.js";
-import * as createBooks from "./CreateBooks.js";
+import * as createBooks from "../homepage-js/CreateBooks.js";
 import * as modal from "../homepage-js/Modal.js"
 import * as searchBar from "../homepage-js/SearchBar.js"; 
 import * as rating from "../homepage-js/Rating.js";

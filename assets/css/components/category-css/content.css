@@ -24,6 +24,7 @@
     font-size: 14px;
     color: var(--white-color);
     padding: 10px 15px;
+    border-radius: 12px;
 }
 .category-selection-wrapper__fields:hover {
     background-color: var(--white-color);
@@ -173,14 +174,7 @@
     color: #BF4800;
     font-size: 12px;
 }
-.new-book-slider-wrapper__slider__slides__slide__footer .button-buy {
-    border: 1px solid #BF4800;
-    border-radius: 25px;
-    padding: 2px 15px;
-    background-color: transparent;
-    cursor: pointer;
-}
-.new-book-slider-wrapper__slider__slides__slide__footer .button-buy:hover {
+.new-book-slider-wrapper__slider__slides__slide__footer .button--buy:hover {
     background-color: #BF4800;
     color: white;
     transition: 0.5s ease;

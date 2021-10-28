@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/images/Icons/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/components/homepage-css/header.css">
+    <link rel="stylesheet" href="/assets/css/components/homepage-css/footer.css">
+    <link rel="stylesheet" href="/assets/css/components/homepage-css/modal.css">
+    <link rel="stylesheet" href="/assets/css/components/category-css/content.css">
+    <link rel="stylesheet" href="/assets/css/components/detail-product-css/content.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <script type="module" src="/assets/js/components/detail-product-js/main.js"></script>
+    <title>Detail product</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="grid grid--flex">
+                <!-- Menu -->
+                <div class="menu">
+                    <div class="toggle">
+                        <span class="button--menu"><i class="fas fa-bars"></i></span>
+                        <span class="button--close"><i class="fas fa-times"></i></span>
+                    </div>
+                    <div class="menu-components">
+                        <div class="menu-components-container grid">
+                            <div class="menu-components-container__items">
+                                <div class="search-bar" id="second-search-bar">
+                                    <div class="input-text">
+                                        <i class="fas fa-search icons--search"></i>
+                                        <input type="text" placeholder="Enter keyword">
+                                        <i class="far fa-times-circle icons--erase"></i>
+                                        <ul class="input-text__autocom-box">
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-components-container__items">
+                                <p>Notification</p> 
+                            </div>
+                            <div class="menu-components-container__items button--register">
+                                <p>Register</p> 
+                            </div>
+                            <div class="menu-components-container__items button--login">
+                                <p>Login</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Logo -->
+                <div class="logo">
+                    <i class="fas fa-kiwi-bird icons--bird"></i>
+                    <h2 class="logo__word">SMART BIRD</h2>
+                </div>
+                <!-- Search bar -->
+                <div class="search-bar" id="first-search-bar">
+                    <div class="input-text">
+                        <i class="fas fa-search icons--search"></i>
+                        <input type="text" placeholder="Enter keyword">
+                        <i class="far fa-times-circle icons--erase"></i>
+                        <ul class="input-text__autocom-box">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Navigation bar -->
+                <nav id="nav-bar">
+                    <ul class="list">
+                        <li class="list__items"><button type="button" class="button--nav button--register">Register</button></li>
+                        <li class="list__items"><button type="button" class="button--nav button--login">Login</button></li>
+                        <!-- <li class="list__items">
+                            <div id="user-avatar">
+                                <img src="./images/avatar-user.jfif" class="user-image"alt="user-avatar">
+                                <p class="user-name">TriPham</p>
+                            </div>
+                            <div id="user-menu">
+                                <a href="" id="user-profile">Tài khoản của tôi</a>
+                                <a href="" id="user-order">Đơn mua</a>
+                                <a href="" id="user-log-out">Đăng xuất</a>
+                            </div>
+                        </li> -->
+                        <li class="list__items">
+                            <button class="button--notify">
+                                <i class="fas fa-bell icons--notify"></i>
+                            </button>
+                            <!-- New notification -->
+                            <div id="new-notify">
+                                <div class="header">
+                                    <h3>Notification</h3>
+                                    <hr>
+                                </div>
+                                <div class="list">
+                                    <div class="news">
+                                        <img src="/assets/images/pictures/category-images/notification.png" alt="" class="image">
+                                        <div class="news__description">
+                                            <p class="news__title">There are currently no new announcements</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list__items">
+                            <button class="button--cart">
+                                <i class="fas fa-shopping-cart icons--shopping"></i>
+                            </button>
+                            <!-- Cart notification -->
+                            <div id="cart-notify">
+                                <div class="header">
+                                    <h3>Your cart</h3>
+                                    <hr>
+                                </div>
+                                <div class="list">
+                                    <div class="book-container">
+                                        <a href="javascript:" class="book">
+                                            <img src="/assets/images/pictures/category-images/doraemon-episode-1.png" class="image">
+                                            <div class="book__description">
+                                                <p class="book__title">doraemon episode 1</p>
+                                                <p class="book__price">18.000đ</p>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:" class="book--take-out"><i class="far fa-times-circle"></i></a>
+                                    </div>
+                                    <div class="book-container">
+                                        <a href="javascript:" class="book">
+                                            <img src="/assets/images/pictures/category-images/doraemon-episode-23.png" class="image">
+                                            <div class="book__description">
+                                                <p class="book__title">doraemon episode 1</p>
+                                                <p class="book__price">18.000đ</p>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:" class="book--take-out"><i class="far fa-times-circle"></i></a>
+                                    </div>
+                                </div>
+                                <div id="cart-notify__total">
+                                    <hr>
+                                    <h3>Total cost</h3>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="content">
+            <div class="grid">
+                <div class="row">
+                    <!-- Category selection -->
+                    <div class="category-selection col l-12 m-12 s-12">
+                        <div class="category-selection-container">
+                            <ul class="category-selection-wrapper">
+                                <li class="category-selection-wrapper__fields">Funny</li>
+                                <li class="category-selection-wrapper__fields">Romantic</li>
+                                <li class="category-selection-wrapper__fields">Adventure</li>
+                                <li class="category-selection-wrapper__fields">Fantasy</li>
+                                <li class="category-selection-wrapper__fields">Horror</li>
+                                <li class="category-selection-wrapper__fields">Detective</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="breadcrumbs col l-12 m-12 s-12">
+                        <div class="breadcrumbs-container">
+                            <ol class="breadcrumbs-wrapper">
+                                <li class="breadcrumbs-links">
+                                    <a href="" id="home">Home</a>
+                                    <span>/</span>
+                                </li>
+                                <li class="breadcrumbs-links">
+                                    <a href="" id="category">Category</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="detail-product col l-12">
+                        <div class="detail-product-container">
+                            <div class="detail-product-wrapper">
+                                <div class="product-general-view col l-4">
+                                    <div class="product-image">
+                                        <img src="/assets/images/pictures/category-images/slider/rich-habits-poor-habits.png" alt="">
+                                    </div>
+                                    <div class="convenience-policy">
+                                        <div class="convenience-pollicy__safe-package">
+                                            <i class="fas fa-box"></i>
+                                            <span>Safe package</span>
+                                        </div>
+                                        <div class="convenience-pollicy__fast-delivery">
+                                            <i class="fas fa-shipping-fast"></i>
+                                            <span>Fast delivery</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="product-general-description col l-8">
+                                    <li class="product-general-description__section">
+                                        <div class="product-general-description__title">
+                                            <h3>Rich habits Poor habits</h3>
+                                        </div>
+                                    </li>
+                                    <li class="product-general-description__section">
+                                        <div class="product-general-description__auther">
+                                            <p class="product-general-description__auther__name">Auther:</p>
+                                            <p class="product-general-description__auther__detail">Thomas C. Corley, Michael Yardney</p>
+                                        </div>
+                                    </li>
+                                    <li class="product-general-description__section">
+                                        <div class="product-general-description__publishing-company">
+                                            <p class="product-general-description__publishing-company__name">Publishing company:</p>
+                                            <p class="product-general-description__publishing-company__detail">Smart Bird</p>
+                                        </div>
+                                    </li>
+                                    <li class="product-general-description__section">
+                                        <div class="product-general-description__rating">
+                                            <p class="product-general-description__rating__title">Rating:</p>
+                                            <div class="outer-star">
+                                                <div class="inner-star"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="product-general-description__section">
+                                        <div class="product-general-description__price">
+                                            <p class="product-general-description__price__title">Price:</p>
+                                            <p class="product-general-description__price__detail">50000 <b>đ</b></p>
+                                        </div>
+                                    </li>
+                                    <li class="product-general-description__section">
+                                        <div class="product-general-description__quantity">
+                                            <p class="product-general-description__quantity__title">Quantity: </p>
+                                            <div class="quantity-box-wrapper">
+                                                <div class="quantity-box">
+                                                    <a href="" class="quantity-box__increase"><i class="fas fa-minus"></i></a>
+                                                    <input type="text">
+                                                    <a href="" class="quantity-box__decrease"><i class="fas fa-plus"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="product-general-description__section">
+                                        <div class="product-general-description__policy">
+                                            <p class="product-general-description__policy__detail">Return policy: return product within 30 days</p>
+                                        </div>
+                                    </li>
+                                    <li class="product-general-description__section">
+                                        <div class="product-general-description__add-buy-section">
+                                            <button class="button--add-cart">ADD TO CART</button>
+                                            <button class="button--buy">BUY NOW</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="relative-book col l-12 m-12 s-12">
+                        <div class="relative-book-container">
+                            <div class="relative-book-title l-12">
+                                <p>Relative Books</p>
+                            </div>
+                            <ul class="relative-book-container-wrapper l-12">
+                                <div class="book-selling-container">
+                                    <div class="book-selling-body">
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="detail-description col l-12">
+                        <div class="detail-description-container">
+                            <div class="detail-description-wrapper">
+                                <div class="detail-description-section">
+                                    <p class="detail-description-section__title">Description</p>
+                                </div>
+                                <div class="detail-description-group">
+                                    <div class="detail-description-group__id-product">
+                                        <p class="detail-description-group__id-product__title">ID Product:</p>
+                                        <p class="detail-description-group__id-product__detail"></p>
+                                    </div>
+                                    <div class="detail-description-group__release-date">
+                                        <p class="detail-description-group__release-date__title">Release date:</p>
+                                        <p class="detail-description-group__release-date__detail"></p>
+                                    </div>
+                                    <div class="detail-description-group__supplier">
+                                        <p class="detail-description-group__supplier__name">Supplier:</p>
+                                        <p class="detail-description-group__supplier__detail"></p>
+                                    </div>
+                                    <div class="detail-description-group__auther">
+                                        <p class="detail-description-group__auther__name">Auther:</p>
+                                        <p class="detail-description-group__auther__detail"></p>
+                                    </div>
+                                    <div class="detail-description-group__publishing-year">
+                                        <p class="detail-description-group__publishing-year__title">Publishing year:</p>
+                                        <p class="detail-description-group__publishing-year__detail"></p>
+                                    </div>
+                                    <div class="detail-description-group__language">
+                                        <p class="detail-description-group__language__title">Language:</p>
+                                        <p class="detail-description-group__language__detail"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="product-reviews col l-12">
+                        <div class="product-reviews-container">
+                            <div class="product-reviews-wrapper">
+                                <div class="product-reviews-rating l-5 ">
+                                    <div class="product-reviews-title">
+                                        <p>Product reivews:</p>
+                                    </div>
+                                    <div class="product-reviews-star">
+                                        <div class="product-reviews-star__point">
+                                            <div class="product-reviews-star__point__general">
+                                                <p class="big-number">4.9</p>
+                                                <span>/</span>
+                                                <p class="small-number">5</p>
+                                            </div>
+                                            <div class="product-reviews-star__point__total-comment">
+                                                <p class="product-reviews-star__point__total-comment__title">Total:</p>
+                                                <p class="product-reviews-star__point__total-comment__detail">100 comments</p>
+                                            </div>
+                                            <div class="product-reviews-star__point__general-star">
+                                                <div class="outer-star">
+                                                    <div class="inner-star"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-reviews-star__progress-bar">
+                                            <div class="product-reviews-star__progress-bar__container">
+                                                <div class="product-reviews-star__progress-bar-title">
+                                                    5 star
+                                                </div>
+                                                <div class="product-reviews-star__progress-bar__5-star">
+                                                    <div class="product-reviews-star__progress-bar-gain">
+                                                        <span>60%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-reviews-star__progress-bar__container">
+                                                <div class="product-reviews-star__progress-bar-title">
+                                                    4 star
+                                                </div>
+                                                <div class="product-reviews-star__progress-bar__4-star">
+                                                    <div class="product-reviews-star__progress-bar-gain">
+                                                        <span>20%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-reviews-star__progress-bar__container">
+                                                <div class="product-reviews-star__progress-bar-title">
+                                                    3 star
+                                                </div>
+                                                <div class="product-reviews-star__progress-bar__3-star">
+                                                    <div class="product-reviews-star__progress-bar-gain">
+                                                        <span>10%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-reviews-star__progress-bar__container">
+                                                <div class="product-reviews-star__progress-bar-title">
+                                                    2 star
+                                                </div>
+                                                <div class="product-reviews-star__progress-bar__2-star">
+                                                    <div class="product-reviews-star__progress-bar-gain">
+                                                        <span>8%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-reviews-star__progress-bar__container">
+                                                <div class="product-reviews-star__progress-bar-title">
+                                                    1 star
+                                                </div>
+                                                <div class="product-reviews-star__progress-bar__1-star">
+                                                    <div class="product-reviews-star__progress-bar-gain">
+                                                        <span>2%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-reviews-comment l-7">
+                                    <div class="product-reviews-comment-title">
+                                        <p>Comment</p>
+                                    </div>
+                                    <ul class="product-reviews-comment-group">
+                                        <li class="product-reviews-comment-group__detail">
+                                            <div class="product-reviews-comment-group__detail__name">
+                                                <p>Phạm Đức Trí</p>
+                                            </div>
+                                            <div class="product-reviews-comment-group__detail__star">
+                                                <div class="outer-star">
+                                                    <div class="inner-star"></div>
+                                                </div>
+                                            </div>
+                                            <div class="product-reviews-comment-group__detail__review">
+                                                Một trong những tác phẩm kinh điển, bestseller nên đọc. 
+                                                Sách kể về câu chuyện của một cậu bé chăn cừu trên con đường đi tìm kiếm kho báu khổng lồ. 
+                                                Câu chuyện đem đến cho bản thân em nhiều suy nghĩ và liên tưởng về cuộc sống này.
+                                            </div>
+                                            <button class="button--like">
+                                                <div class="icon--like"><i class="fas fa-thumbs-up"></i></div>
+                                                <div class="button--like-title">
+                                                    Likes
+                                                </div>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                    <div class="product-reviews-comment-add-view">
+                                        <button class="button-add-comment">
+                                            <p>Add comment</p>
+                                        </button>
+                                        <button class="button-view">
+                                            <p>View more</p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
