@@ -6,21 +6,23 @@
 }
 .category-selection-wrapper {
     margin: 0;
-    padding: 0;
+    padding: 10px;
     background-color: var(--black-color);
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-wrap: wrap;
     list-style: none;
-    border-radius: 15px;
+    border-radius: 18px;
 }
 .category-selection-wrapper__fields {
     font-size: 1.4rem;
     color: var(--white-color);
     padding: 10px 15px;
-    flex-basis: 16.66%;
     text-align: center;
+    display: inline-block;
+    flex-basis: 16.66666667%;
+    border-radius: 15px;
 }
 .category-selection-wrapper__fields:hover {
     background-color: var(--white-color);

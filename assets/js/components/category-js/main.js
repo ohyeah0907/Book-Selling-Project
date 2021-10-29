@@ -42,35 +42,35 @@ window.addEventListener("load",function(){
         { 
                 book_name: "HarryPottervaHoangTuLai",
                 book_title: "Harry Potter và Hoàng Tử Lai",
-                book_image: "/assets/images/pictures/category-images/harry-potter-va-hoang-tu-lai.jpg",
+                book_image: "/assets/images/pictures/category-images/others/harry-potter-va-hoang-tu-lai.jpg",
                 book_price: 50000,
                 book_rating: 2
         },
         { 
                 book_name: "HarryPottervaHonDaPhuThuy",
                 book_title: "Harry Potter và Hòn Đá Phù Thủy",
-                book_image: "/assets/images/pictures/category-images/harry-potter-va-hon-da-phu-thuy.jpg",
+                book_image: "/assets/images/pictures/category-images/others/harry-potter-va-hon-da-phu-thuy.jpg",
                 book_price: 50000,
                 book_rating: 1.5
         },
         { 
                 book_name: "HarryPottervaHoiPhuongHoang",
                 book_title: "Harry Potter và Hòn Đá Phù Thủy",
-                book_image: "/assets/images/pictures/category-images/harry-potter-va-hoi-phuong-hoang.jpg",
+                book_image: "/assets/images/pictures/category-images/others/harry-potter-va-hoi-phuong-hoang.jpg",
                 book_price: 50000,
                 book_rating: 1.5
         },
         { 
                 book_name: "HarryPottervaTenTuNhanNgucAzakaban",
                 book_title: "Harry Potter và Hòn Đá Phù Thủy",
-                book_image: "/assets/images/pictures/category-images/harry-potter-va-ten-tu-nhan-nguc-azakaban.jpg",
+                book_image: "/assets/images/pictures/category-images/others/harry-potter-va-ten-tu-nhan-nguc-azakaban.jpg",
                 book_price: 50000,
                 book_rating: 1.5
         },
         { 
                 book_name: "HarryPottervaHonDaPhuThuy",
                 book_title: "Harry Potter và Hòn Đá Phù Thủy",
-                book_image: "/assets/images/pictures/category-images/harry-potter-va-hon-da-phu-thuy.jpg",
+                book_image: "/assets/images/pictures/category-images/others/harry-potter-va-hon-da-phu-thuy.jpg",
                 book_price: 50000,
                 book_rating: 1.5
         }
