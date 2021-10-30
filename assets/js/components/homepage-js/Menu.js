@@ -1,3 +1,4 @@
+// Toggle menu
 function ToggleMenu() {
     const toggle = document.querySelector(".toggle");
     const menuComponents = document.querySelector(".menu-components");

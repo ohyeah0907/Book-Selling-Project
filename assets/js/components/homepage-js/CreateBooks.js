@@ -5,7 +5,7 @@ function CreateNewBook(books, feature) {
         const bookContainer = document.createElement("div");
         bookContainer.className = `item col l-20-percent m-4 s-6 mm-12 ${book.book_name}`;
         bookContainer.innerHTML=`
-            <a href="" class="book">
+            <a href="/components/detail-product-page.html" class="book">
                 <img src="${book.book_image}" alt="harry-potter-va-hoang-tu-lai" class="book__image">
                 <div class="book__description">
                     <div class="book__title">${book.book_title}</div>

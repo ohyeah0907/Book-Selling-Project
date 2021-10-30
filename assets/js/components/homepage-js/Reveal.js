@@ -1,3 +1,4 @@
+// Reveal when scroll
 function RevealSection() {
     const revealUp = document.querySelectorAll(".reveal-up");
     const revealRight = document.querySelector(".reveal-right");

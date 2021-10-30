@@ -8,6 +8,7 @@
 .logo {
     display: flex;
     flex-direction: column;
+    text-decoration: none;
 }
 .logo .icons--bird {
     font-size: 3.2rem;

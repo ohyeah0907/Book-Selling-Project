@@ -150,10 +150,12 @@
 .button--pay {
     border: 3px solid #BF4800;
     color: #BF4800;
+    text-decoration: none;
 }
 .button--continue {
     border: 3px solid #30475E;
     color: #30475E;
+    text-decoration: none;
 }
 .button--pay:hover {
     background-color: #BF4800;

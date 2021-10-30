@@ -17,14 +17,20 @@
 }
 .category-selection-wrapper__fields {
     font-size: 1.4rem;
-    color: var(--white-color);
-    padding: 10px 15px;
     text-align: center;
     display: inline-block;
     flex-basis: 16.66666667%;
+}
+.category-selection-wrapper__fields a {
+    display: inline-block;
+    color: var(--white-color);
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
     border-radius: 15px;
 }
-.category-selection-wrapper__fields:hover {
+.category-selection-wrapper__fields:hover a{
     background-color: var(--white-color);
     color: var(--black-color);
     cursor: pointer;

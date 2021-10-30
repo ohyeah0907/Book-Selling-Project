@@ -1,3 +1,4 @@
+// Auto slider
 function AutoSlider() {
     let count = 1;
     setInterval(function() {
@@ -19,6 +20,7 @@ function AutoSlider() {
         })
     }, 4000)
 }
+// Advertise slider
 function AdvertiseSlider() {
     let length = document.querySelector(".highest-rate-slides .slide").clientWidth;
     const slideContainer = document.querySelector(".highest-rate-slides")

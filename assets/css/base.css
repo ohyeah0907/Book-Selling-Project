@@ -54,6 +54,7 @@ html {
     padding: 2px 15px;
     background-color: transparent;
     cursor: pointer;
+    text-decoration: none;
 }
 .button--buy {
     border: 1px solid #BF4800;
@@ -298,7 +299,7 @@ html {
     }
     #banner-1-header {
         margin-left: 50%;
-        transform: translateX(-50%);
+        transform: translateX(-50%) !important;
     }
     
     /* Detail product page */
@@ -528,6 +529,9 @@ html {
     .mm-1, .mm-2, .mm-3, .mm-4, .mm-5, .mm-6,
     .mm-7, .mm-8, .mm-9, .mm-10, .mm-11, .mm-12 {
         display: block;
+    }
+    .footer-body > li, .footer-header > p {
+        font-size: 1.2rem !important;
     }
 }
 /* Large phone or portrait tablet */
