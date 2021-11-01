@@ -276,9 +276,11 @@
     padding: 18px 40px;  
     border: none;
     border-radius: 20px;
-    font-size: 1.6rem;
-    box-shadow: -10px 10px 12px #595959;
+    font-size: 1.6rem;  
     margin-top: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: var(--white-color);
 }
 #section-1__container .button--book {
     color: #EF5350;

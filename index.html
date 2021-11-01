@@ -68,7 +68,7 @@
                 <!-- Navigation bar -->
                 <nav id="nav-bar">
                     <ul class="list">
-                        <li class="list__items"><button type="button" class="button--nav button--register" onclick="OpenModelBox()">Register</button></li>
+                        <li class="list__items"><button type="button" class="button--nav button--register">Register</button></li>
                         <li class="list__items"><button type="button" class="button--nav button--login">Login</button></li>
                         <!-- <li class="list__items">
                             <div id="user-avatar">
@@ -93,7 +93,7 @@
                                 </div>
                                 <div class="list">
                                     <div class="news">
-                                        <img src="./assets/images/pictures/homepage-images/notification.png" alt="" class="image">
+                                        <img src="./assets/images/pictures/homepage-images/others/notification.png" alt="" class="image">
                                         <div class="news__description">
                                             <p class="news__title">There are currently no new announcements</p>
                                         </div>
@@ -124,7 +124,7 @@
                                     </div>
                                     <div class="book-container">
                                         <a href="javascript:" class="book">
-                                            <img src="./assets/images/pictures/homepage-images/others/doraemon-episode-23.png" class="image">
+                                            <img src="./assets/images/pictures/homepage-images/others/doraemon-episode-23.jpg" class="image">
                                             <div class="book__description">
                                                 <p class="book__title">doraemon episode 1</p>
                                                 <p class="book__price">18.000đ</p>
@@ -314,9 +314,9 @@
                                     <div class="section-description">
                                         <p class="title">Không ai có thể làm bạn tổn thương trừ khi bạn cho phép</p>
                                         <p class="price">50.000đ</p>
-                                        <button class="button--book">
+                                        <a class="button--book" href="/components/detail-product-page.html">
                                             Book Now
-                                        </button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -326,9 +326,9 @@
                                     <div class="section-description">
                                         <p class="tilte">Làm thế nào để sống 1 đời tốt đẹp</p>
                                         <p class="price">50000đ</p>
-                                        <button class="button--book">
+                                        <a class="button--book" href="/components/detail-product-page.html">
                                             Book Now
-                                        </button>
+                                        </a>
                                     </div>
                                 </div>
                                 <div id="section-3__container">
@@ -336,9 +336,9 @@
                                     <div class="section-description">
                                         <p class="tilte">Tâm lý học hành vi</p>
                                         <p class="price">50000đ</p>
-                                        <button class="button--book">
+                                        <a class="button--book" href="/components/detail-product-page.html">
                                             Book Now
-                                        </button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -396,7 +396,7 @@
     </div>
     <!-- Modal -->
     <div id="modal">
-        <div id="modal__layout">
+        <div id="modal__layout" class="out-box-modal">
         </div>
         <div id="modal__body">
             <!-- Register form -->
@@ -424,7 +424,7 @@
                         </div>
                     </div>
                     <div class="authen-form__footer">
-                        <button type="button" class="button">Return</button>
+                        <button type="button" class="button out-box-modal">Return</button>
                         <button type="submit" class="button--register">Register</button>
                     </div>
                 </div>
@@ -458,7 +458,7 @@
                         </div>
                     </div>
                     <div class="authen-form__footer">
-                        <button type="button" class="button">Return</button>
+                        <button type="button" class="button out-box-modal">Return</button>
                         <button type="submit" class="button--login">Login</button>
                     </div>
                 </div>
@@ -469,5 +469,5 @@
             </form>
         </div>
     </div>
-</body>
+</body>z
 </html>
