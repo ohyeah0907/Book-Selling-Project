@@ -10,11 +10,6 @@ function RevealSection() {
                 item.style.opacity = "1";
             }
         }
-        if(revealRight.getBoundingClientRect().top < document.body.clientHeight - 50) {
-            revealRight.style.transform = "translateX(0)";
-            revealRight.style.opacity = "1";
-        }
-
     })
 }
 export {RevealSection};
