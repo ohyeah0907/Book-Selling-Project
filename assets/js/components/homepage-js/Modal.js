@@ -16,7 +16,7 @@ function Transfer(activeForm, inactiveForm) {
     let unableForm = document.querySelector(inactiveForm);
     unableForm.setAttribute("style", "display: none");
 } 
-
+// Close Modal box
 function OutModalBox() {
     let outAction = document.querySelectorAll(".out-box-modal");
     let modalForm = document.querySelector("#modal");
