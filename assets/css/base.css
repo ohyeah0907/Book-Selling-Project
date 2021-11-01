@@ -50,6 +50,9 @@ html {
     text-align: right;
 }
 .button--buy, .button--add-cart {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 25px;
     padding: 2px 15px;
     background-color: transparent;
