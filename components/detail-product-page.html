@@ -41,10 +41,10 @@
                             <div class="menu-components-container__items">
                                 <p>Notification</p> 
                             </div>
-                            <div class="menu-components-container__items button--register">
+                            <div class="menu-components-container__items button--register" onclick="OpenModalBox(event)">
                                 <p>Register</p> 
                             </div>
-                            <div class="menu-components-container__items button--login">
+                            <div class="menu-components-container__items button--login" onclick="OpenModalBox(event)">
                                 <p>Login</p>
                             </div>
                         </div>
@@ -68,8 +68,8 @@
                 <!-- Navigation bar -->
                 <nav id="nav-bar">
                     <ul class="list">
-                        <li class="list__items"><button type="button" class="button--nav button--register">Register</button></li>
-                        <li class="list__items"><button type="button" class="button--nav button--login">Login</button></li>
+                        <li class="list__items"><button type="button" class="button--nav button--register" onclick="OpenModalBox(event)">Register</button></li>
+                        <li class="list__items"><button type="button" class="button--nav button--login" onclick="OpenModalBox(event)">Login</button></li>
                         <li class="list__items">
                             <div id="user-avatar">
                                 <i class="fas fa-user"></i>
@@ -77,7 +77,7 @@
                             </div>
                             <div id="user-menu">
                                 <a href="" id="user-profile">My account</a>
-                                <a href="" id="user-order">My cart</a>
+                                <a href="/components/detail-cart-page.html" id="user-order">My cart</a>
                                 <a href="" id="user-log-out">Log out</a>
                             </div>
                         </li>
@@ -457,6 +457,80 @@
                 </div>
             </div>
         </footer>
+    </div>
+    <div id="modal">
+        <div id="modal__layout" class="out-box-modal" onclick="OutModalBox(event)">
+        </div>
+        <div id="modal__body">
+            <!-- Register form -->
+            <form class="authen-form -register-authen-form">
+                <div class="authen-form__container">
+                    <div class="authen-form__header">
+                        <h3 class="header-caption">Register</h3>
+                        <button type="button" name="button" class="button--login -background-white -align-right" onclick="OpenModalBox(event)">Login</button>
+                    </div>
+                    <div class="authen-form__body">
+                        <div class="text-field">
+                            <input type="text" class="body-input" name="account" value="account" required>
+                            <label>Enter your account</label>
+                            <span></span>
+                        </div>
+                        <div class="text-field">
+                            <input type="password" class="body-input" name="password" value="password" minlength="8" maxlength="12" required>
+                            <label>Enter your password</label>
+                            <span></span>
+                        </div>
+                        <div class="text-field">
+                            <input type="password" class="body-input" name="re-password" value="re-password" required>
+                            <label>Enter your password again</label>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="authen-form__footer">
+                        <button type="button" class="button out-box-modal" onclick="OutModalBox(event)">Return</button>
+                        <button type="submit" class="button--register">Register</button>
+                    </div>
+                </div>
+                <div class="authen-form__social">
+                    <button type="button" class="button--facebook"><i class="fab fa-facebook icons--facebook"></i>Login with Facebook</button>
+                    <button type="button" class="button--google"><i class="fab fa-google icons--google"></i>Login with Google</button>
+                </div>
+            </form>
+            <!-- Login form -->
+            <form action="" class="authen-form -login-authen-form">
+                <div class="authen-form__container">
+                    <div class="authen-form__header">
+                        <h3 class="header-caption">Login</h3>
+                        <button type="button" name="button" class="button--register -background-white -align-right" onclick="OpenModalBox(event)">Register</button>
+                    </div>
+                    <div class="authen-form__body">
+                        <div class="text-field">
+                            <input type="text" class="body-input" name="account" value="account" required>
+                            <label>Account</label>
+                            <span></span>
+                        </div>
+                        <div class="text-field">
+                            <input type="password" class="body-input" name="password" value="password" required>
+                            <label>Password</label>
+                            <span></span>
+                        </div>
+                        <div class="body-support">
+                            <a href="" class="body-support__link">Forgot your password</a>
+                            <span class="seperate"></span>
+                            <a href="" class="body-support__link">Support?</a>
+                        </div>
+                    </div>
+                    <div class="authen-form__footer">
+                        <button type="button" class="button out-box-modal" onclick="OutModalBox(event)">Return</button>
+                        <button type="button" class="button--login" onclick="LoginSuccessfully()">Login</button>
+                    </div>
+                </div>
+                <div class="authen-form__social">
+                    <button type="button" class="button--facebook"><i class="fab fa-facebook icons--facebook"></i>Login with Facebook</button>
+                    <button type="button" class="button--google"><i class="fab fa-google icons--google"></i>Login with Google</button>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 </html>

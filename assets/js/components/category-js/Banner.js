@@ -10,7 +10,6 @@ function Banner() {
         length = 3;
     else if (document.body.clientWidth <= 839)
         length = 2;
-    console.log(length);
     
     window.addEventListener("resize", () => {
         slides.style.marginLeft = "0px";
@@ -29,7 +28,6 @@ function Banner() {
         count++;
         length++;
         slides.style.marginLeft = `${-(slide[0].clientWidth + 9 * 2) * count}px`;
-        console.log(length);
     })
     document.querySelector("#button-arrow-right").addEventListener("click", () => {
         if(count <= 0)
@@ -37,7 +35,6 @@ function Banner() {
         count--;
         length--;
         slides.style.marginLeft = `${-(slide[0].clientWidth + 9 * 2) * count}px`;
-        console.log(length);
     })
 }
 export {Banner};

@@ -34,23 +34,23 @@ function OutModalBox() {
 }
 /* Open modal box */ 
 function OpenModalBox(event) {
-    if(event.target.classList.contains("button--login")) {
-        modalForm.setAttribute("style", "display: flex");
-        loginForm.setAttribute("style", "display: block");
-        registerForm.setAttribute("style", "display: none");
+    if(event.currentTarget.classList.contains("button--login")) {
+        modalForm.style.display = "flex";
+        loginForm.style.display ="block";
+        registerForm.style.display = "none";
     }
-    if(event.target.classList.contains("button--register")) {
-        modalForm.setAttribute("style", "display: flex");
-        registerForm.setAttribute("style", "display: block");
-        loginForm.setAttribute("style", "display: none");
+    if(event.currentTarget.classList.contains("button--register")) {
+        modalForm.style.display = "flex";
+        registerForm.style.display ="block";
+        loginForm.style.display = "none";
     }
 }
 /* Login successfully */
 function LoginSuccessfully() {
-    modalForm.setAttribute("style", "display: none");
-    loginButton.setAttribute("style", "display: none");
-    registerButton.setAttribute("style", "display: none");
-    userInterface.setAttribute("style", "display: flex");
+    modalForm.style.display = "none";
+    loginButton.style.display ="none";
+    registerButton.style.display = "none";
+    userInterface.style.display = "flex";
 }
 window.OpenModalBox = OpenModalBox;
 window.OutModalBox = OutModalBox;

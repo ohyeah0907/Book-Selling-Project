@@ -10,12 +10,12 @@ function ToggleMenu() {
     toggle.addEventListener("click", () => {
         toggle.classList.toggle("switch");
         menuComponents.classList.toggle("switch");
-        if(check == true) 
+        if(check == true)
         {
-            html.style.overflow = "hidden"; 
+            html.style.overflow = "hidden";
             check = false;
         }
-        else 
+        else
         {
             html.style.overflow = "auto";
             check = true;
@@ -23,17 +23,18 @@ function ToggleMenu() {
     });
 
     buttonRegister.addEventListener("click", () => {
-        menuComponents.style.display = "none";
+        menuComponents.classList.remove("switch");
+        toggle.classList.remove("switch");
     })
     buttonLogin.addEventListener("click", () => {
-        menuComponents.style.display = "none";
+        menuComponents.classList.remove("switch");
+        toggle.classList.remove("switch");
     })
 
     window.addEventListener("resize", () => {
         if(document.body.clientWidth >= 1230)
         {
-            toggle.classList.contains("switch");
-            toggle.classList.remove("switch");   
+            toggle.classList.remove("switch");
             menuComponents.classList.remove("switch");
             html.style.overflow = "auto";
             check = true;

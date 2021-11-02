@@ -40,20 +40,20 @@
                             <div class="menu-components-container__items">
                                 <p>Notification</p> 
                             </div>
-                            <div class="menu-components-container__items button--register">
+                            <div class="menu-components-container__items button--register" onclick="OpenModalBox(event)">
                                 <p>Register</p> 
                             </div>
-                            <div class="menu-components-container__items button--login">
+                            <div class="menu-components-container__items button--login" onclick="OpenModalBox(event)">
                                 <p>Login</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- Logo -->
-                <div class="logo">
+                <a class="logo" href="/index.html">
                     <i class="fas fa-kiwi-bird icons--bird"></i>
                     <h2 class="logo__word">SMART BIRD</h2>
-                </div>
+                </a>
                 <!-- Search bar -->
                 <div class="search-bar" id="first-search-bar">
                     <div class="input-text">
@@ -67,8 +67,8 @@
                 <!-- Navigation bar -->
                 <nav id="nav-bar">
                     <ul class="list">
-                        <li class="list__items"><button type="button" class="button--nav button--register">Register</button></li>
-                        <li class="list__items"><button type="button" class="button--nav button--login">Login</button></li>
+                        <li class="list__items"><button type="button" class="button--nav button--register" onclick="OpenModalBox(event)">Register</button></li>
+                        <li class="list__items"><button type="button" class="button--nav button--login" onclick="OpenModalBox(event)">Login</button></li>
                         <li class="list__items">
                             <div id="user-avatar">
                                 <i class="fas fa-user"></i>
@@ -76,7 +76,7 @@
                             </div>
                             <div id="user-menu">
                                 <a href="" id="user-profile">My account</a>
-                                <a href="" id="user-order">My cart</a>
+                                <a href="/components/detail-cart-page.html" id="user-order">My cart</a>
                                 <a href="" id="user-log-out">Log out</a>
                             </div>
                         </li>
@@ -166,13 +166,13 @@
                             <ul class="detail-order-wrapper">
                                 <li class="item-product-cart">
                                     <div class="image-product-cart">
-                                        <a href=""><img src="/assets/images/pictures/category-images/slider/khong-ai-co-the-lam-ban-ton-thuong-tru-khi-ban-cho-phep.png" alt=""></a>
+                                        <a href="/components/detail-product-page.html"><img src="/assets/images/pictures/category-images/slider/khong-ai-co-the-lam-ban-ton-thuong-tru-khi-ban-cho-phep.png" alt=""></a>
                                     </div>
                                     <div class="group-product-info">
                                         <div class="info-product">
-                                            <div class="info-product__description">
-                                                <span>Không ai có thể làm bạn tổn thương trừ khi bạn cho phép</span>
-                                            </div>
+                                            <a  href="/components/detail-product-page.html" class="info-product__description">
+                                                <p>Không ai có thể làm bạn tổn thương trừ khi bạn cho phép</p>
+                                            </a>
                                             <span class="info-product__price">50000 <b>đ</b></span>
                                         </div>
                                         <div class="number-product-info">
@@ -218,12 +218,51 @@
                                     <div class="detail-bill-payment__delivery-policy">
                                         <p>Goods shipped within 3 days or more</p>
                                     </div>
-                                    <div class="detail-bill-payment__pay-continue">
+                                    <div class="detail-bill-payment__continue-shopping">
                                         <a class="button--continue" href="/index.html">CONTINUE SHOPPING</a>
-                                        <a class="button--pay" href="">PAY</a>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--  -->
+                    <div class="shipment-details col l-12">
+                        <div class="shipment-details-container">
+                            <form class="shipment-details-wrapper">
+                                <div class="customer-info">
+                                    <div class="customer-info-title">
+                                        <b>Customer information </b>
+                                    </div>
+                                    <div class="customer-info-group">
+                                        <div class="customer-info-group__name">
+                                            <label for="name-customer">Name:</label>
+                                            <input type="text" placeholder="Enter the receiver's name" id="name-customer">
+                                        </div>
+                                        <div class="customer-info-group__address">
+                                            <label for="address">Address:</label>
+                                            <input type="text" placeholder="Enter the receiver's address" id="address">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="payment-methods">
+                                    <div class="payment-methods-title">
+                                        Payment methods
+                                    </div>
+                                    <div class="payment-methods-group">
+                                        <div class="payment-methods-group__momo">
+                                            <input type="radio" name="payment-group" id="momo">
+                                            <label for="">MoMo</label>
+                                        </div>
+                                        <div class="payment-methods-group__paypal">
+                                            <input type="radio" name="payment-group" id="paypal">
+                                            <label for="">PayPal</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="button--pay">Payment Confirmation</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -231,7 +270,7 @@
         </div>
     </div>
     <div id="modal">
-        <div id="modal__layout">
+        <div id="modal__layout" class="out-box-modal" onclick="OutModalBox(event)">
         </div>
         <div id="modal__body">
             <!-- Register form -->
@@ -239,7 +278,7 @@
                 <div class="authen-form__container">
                     <div class="authen-form__header">
                         <h3 class="header-caption">Register</h3>
-                        <button type="button" name="button" class="button--login -background-white -align-right">Login</button>
+                        <button type="button" name="button" class="button--login -background-white -align-right" onclick="OpenModalBox(event)">Login</button>
                     </div>
                     <div class="authen-form__body">
                         <div class="text-field">
@@ -259,7 +298,7 @@
                         </div>
                     </div>
                     <div class="authen-form__footer">
-                        <button type="button" class="button">Return</button>
+                        <button type="button" class="button out-box-modal" onclick="OutModalBox(event)">Return</button>
                         <button type="submit" class="button--register">Register</button>
                     </div>
                 </div>
@@ -273,7 +312,7 @@
                 <div class="authen-form__container">
                     <div class="authen-form__header">
                         <h3 class="header-caption">Login</h3>
-                        <button type="button" name="button" class="button--register -background-white -align-right">Register</button>
+                        <button type="button" name="button" class="button--register -background-white -align-right" onclick="OpenModalBox(event)">Register</button>
                     </div>
                     <div class="authen-form__body">
                         <div class="text-field">
@@ -293,8 +332,8 @@
                         </div>
                     </div>
                     <div class="authen-form__footer">
-                        <button type="button" class="button">Return</button>
-                        <button type="submit" class="button--login">Login</button>
+                        <button type="button" class="button out-box-modal" onclick="OutModalBox(event)">Return</button>
+                        <button type="button" class="button--login" onclick="LoginSuccessfully()">Login</button>
                     </div>
                 </div>
                 <div class="authen-form__social">

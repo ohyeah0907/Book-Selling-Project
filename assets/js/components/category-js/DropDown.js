@@ -10,7 +10,7 @@ function DropDown() {
         lastField.classList.toggle("active");
         options.forEach(option => {
             option.addEventListener("click", () => {
-                selectedDefault.textContent = option.querySelector("label").innerHTML;
+                selectedDefault.textContent = option.querySelector("label").innerHTML;  
                 headerDropDownBar.classList.remove("active");
                 dropDownBar.classList.remove("active");
                 lastField.classList.remove("active");

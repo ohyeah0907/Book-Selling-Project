@@ -30,6 +30,7 @@
     max-width: 146px;
     max-height: 146px;
     border: 1px solid var(--black-color);
+    text-decoration: none;
 }
 .group-product-info {
     display: flex;
@@ -41,8 +42,10 @@
     font-size: 1.4rem;
 }
 .info-product__description {
+    display: block;
     font-weight: 400;
     padding: 15px;
+    text-decoration: none;
 }
 .info-product__price {
     color: #FB3640;
@@ -134,7 +137,7 @@
 .detail-bill-payment__delivery-policy p {
     margin: 0;
 }
-.detail-bill-payment__pay-continue {
+.detail-bill-payment__continue-shopping {
     display: flex;
     justify-content: space-evenly;
     margin: 25px 0 10px 0;
@@ -164,4 +167,45 @@
 .button--continue:hover {
     background-color: #30475E;
     color: var(--white-color);
+}
+.shipment-details, .shipment-details-container, .shipment-details-wrapper {
+    width: 100%;
+    height: max-content;
+}
+.shipment-details {
+    margin-top: 30px;
+}
+.shipment-details-wrapper {
+    border-radius: 15px;
+    background-color: var(--white-color);
+    padding: 10px;
+}
+.customer-info, .payment-methods {
+    font-size: 1.6rem;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.customer-info-title, .payment-methods-title {
+    margin-bottom: 10px;
+}
+.customer-info-group div {
+    margin: 10px 10px 10px 0;
+}
+.customer-info-group__name label, .customer-info-group__address label{
+    display: inline-block;
+    margin-right: 10px;
+    max-width: 60px;
+    width: 100%;
+}
+.customer-info-group__name input, .customer-info-group__address input {
+    max-width: 350px;
+    width: 100%;
+    height: 30px;
+}
+.payment-methods-group__momo, .payment-methods-group__paypal {
+    margin-bottom: 10px;
+}
+.shipment-details-wrapper .button--pay {
+    margin-left: 10px;
 }
