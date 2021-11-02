@@ -9,14 +9,11 @@ import * as reveal from "./Reveal.js";
 window.addEventListener("load",function(){
         
         //Login and Register
-        const loginButton = this.document.getElementsByClassName("button--login");
-        const registerButton = this.document.getElementsByClassName("button--register");   
+        // const loginButton = this.document.getElementsByClassName("button--login");
+        // const registerButton = this.document.getElementsByClassName("button--register");   
 
-        modal.IdentifyButton(loginButton, modal.loginForm, modal.registerForm);
-        modal.IdentifyButton(registerButton, modal.registerForm, modal.loginForm);
-
-        //Our modal box
-        modal.OutModalBox();    
+        // modal.IdentifyButton(loginButton, modal.loginForm, modal.registerForm);
+        // modal.IdentifyButton(registerButton, modal.registerForm, modal.loginForm); 
         
         //Search bar
         const firstSearchBar = this.document.querySelector("#first-search-bar input");

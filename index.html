@@ -41,10 +41,10 @@
                             <div class="menu-components-container__items">
                                 <p>Notification</p>
                             </div>
-                            <div class="menu-components-container__items button--register">
+                            <div class="menu-components-container__items button--register" onclick="OpenModalBox(event)">
                                 <p>Register</p>
                             </div>
-                            <div class="menu-components-container__items button--login">
+                            <div class="menu-components-container__items button--login" onclick="OpenModalBox(event)">
                                 <p>Login</p>
                             </div>
                         </div>
@@ -68,8 +68,8 @@
                 <!-- Navigation bar -->
                 <nav id="nav-bar">
                     <ul class="list">
-                        <li class="list__items"><button type="button" class="button--nav button--register">Register</button></li>
-                        <li class="list__items"><button type="button" class="button--nav button--login">Login</button></li>
+                        <li class="list__items"><button type="button" class="button--nav button--register" onclick="OpenModalBox(event)">Register</button></li>
+                        <li class="list__items"><button type="button" class="button--nav button--login" onclick="OpenModalBox(event)">Login</button></li>
                         <li class="list__items">
                             <div id="user-avatar">
                                 <i class="fas fa-user"></i>
@@ -396,7 +396,7 @@
     </div>
     <!-- Modal -->
     <div id="modal">
-        <div id="modal__layout" class="out-box-modal">
+        <div id="modal__layout" class="out-box-modal" onclick="OutModalBox(event)">
         </div>
         <div id="modal__body">
             <!-- Register form -->
@@ -404,7 +404,7 @@
                 <div class="authen-form__container">
                     <div class="authen-form__header">
                         <h3 class="header-caption">Register</h3>
-                        <button type="button" name="button" class="button--login -background-white -align-right">Login</button>
+                        <button type="button" name="button" class="button--login -background-white -align-right" onclick="OpenModalBox(event)">Login</button>
                     </div>
                     <div class="authen-form__body">
                         <div class="text-field">
@@ -424,7 +424,7 @@
                         </div>
                     </div>
                     <div class="authen-form__footer">
-                        <button type="button" class="button out-box-modal">Return</button>
+                        <button type="button" class="button out-box-modal" onclick="OutModalBox(event)">Return</button>
                         <button type="submit" class="button--register">Register</button>
                     </div>
                 </div>
@@ -438,7 +438,7 @@
                 <div class="authen-form__container">
                     <div class="authen-form__header">
                         <h3 class="header-caption">Login</h3>
-                        <button type="button" name="button" class="button--register -background-white -align-right">Register</button>
+                        <button type="button" name="button" class="button--register -background-white -align-right" onclick="OpenModalBox(event)">Register</button>
                     </div>
                     <div class="authen-form__body">
                         <div class="text-field">
@@ -458,8 +458,8 @@
                         </div>
                     </div>
                     <div class="authen-form__footer">
-                        <button type="button" class="button out-box-modal">Return</button>
-                        <button type="submit" class="button--login">Login</button>
+                        <button type="button" class="button out-box-modal" onclick="OutModalBox(event)">Return</button>
+                        <button type="button" class="button--login" onclick="LoginSuccessfully()">Login</button>
                     </div>
                 </div>
                 <div class="authen-form__social">
