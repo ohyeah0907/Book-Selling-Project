@@ -14,6 +14,8 @@ window.addEventListener("load",function(){
 
         // modal.IdentifyButton(loginButton, modal.loginForm, modal.registerForm);
         // modal.IdentifyButton(registerButton, modal.registerForm, modal.loginForm); 
+        let directory = ".";
+        this.window.directory = directory;
         
         //Search bar
         const firstSearchBar = this.document.querySelector("#first-search-bar input");
