@@ -1,0 +1,36 @@
+#header {
+    height: 56px;
+    background-color: var(--black-color);
+    padding: 0 16px;
+    display: flex;
+    position: relative;
+}
+.header__container__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    padding: 0 24px;
+    transition:ease .2s;
+    color: var(--white-color);
+}
+#group-name {
+    color: var(--white-color);
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.header__container {
+    height: 56px;
+    position: absolute;
+    right: 16px;
+    display: flex;
+    cursor: pointer;
+}
+.header__container__box__item {
+    font-size: 24px;
+}
+.header__container--hover:hover {
+    background-color: var(--white-color);
+    color: var(--black-color);
+}

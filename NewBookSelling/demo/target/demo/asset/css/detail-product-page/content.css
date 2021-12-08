@@ -1,0 +1,158 @@
+.body-content {
+    height: 100%;
+    height: max-content;
+}
+/* Detail information */
+.book-info-container {
+    display: flex;
+    max-width: 100%;
+    height: max-content;
+}
+.formal {
+    margin-top: 20px;
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-between;
+    height: max-content;
+    background-color: var(--white-color);
+    gap: 0 20px;
+    border-radius: 10px;
+}
+.add-to-cart {
+    display: block;
+    max-height: max-content;
+    padding: 0;
+    text-align: center;
+}
+.add-to-cart img{
+    display: inline-block;
+    width: 100%;
+    height: 470px;
+    max-width: 350px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+}
+.book-info {
+    padding: 20px;
+    position:relative;
+    height: 100%;
+}
+.book-info form {
+    margin-top: 10px;
+}
+.book-info__content  {
+    color: var(--black-color);
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--black-color);
+}
+.book-info__title, .book-info__price {
+    margin:5px 0;
+}
+.book-info__title {
+    font-weight: bold;
+}
+.book-info__price, .book-info__title {
+    font-size: 2rem;
+}
+.book-info__description {
+    margin-top: 20px;
+    padding: 16px 20px;
+    background-color: var(--base-color);
+    overflow:hidden;
+    height: max-content;
+}
+.book-info__description-header {
+    font-size: 2rem;
+}
+.book-info__description-paragraph {
+    font-size:1.6rem;
+    overflow: scroll;
+    max-height: 180px;
+}
+#add-button {
+    font-size: 1.6rem;
+    border: 1px solid var(--black-color);
+    padding: 16px 24px;
+    color: var(--white-color);
+    background-color: var(--black-color);
+    cursor: pointer;
+    transition: ease 0.5s
+}
+#add-button:hover {
+    color: var(--white-color);
+    background-color: var(--slight-black-color);
+}
+/* product rating */
+.product-review {
+    margin-top: 20px !important;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    height: max-content !important;
+}
+.product-review__container {
+    display: flex;
+    margin-top: 20px;
+}
+.product-review__overall {
+    background-color: #ffe5d9;
+    text-align: center;
+    padding: 20px;
+    font-size: 2.5rem;
+    height: 100px;
+}
+.overall__ratings-summary {
+    color: var(--rating-color);
+}
+.product-ratings {
+    flex:1;
+}
+.product-rating {
+    display: flex;
+    padding: 0 20px;
+    min-height: 100px;
+    flex:1
+}
+.product-rating + .product-rating {
+    margin-top: 10px;
+}
+.product-rating__avatar {
+    padding: 0 5px;
+    width: 6rem;
+    height: 6rem;
+}
+.avatar__img {
+    border-radius: 50%;
+}
+.product-rating__main {
+    flex: 1;
+}
+.client__name {
+    font-size: 2rem;
+}
+.client__comment {
+    font-size: 1.6rem;
+    padding-right: 20px;
+}
+.header-item {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.item-rating {
+    color: var(--rating-color);
+}
+.item-rating--large {
+    font-size: 2rem;
+}
+.item-rating--medium { 
+    font-size: 1.6rem;
+}
+.mt-10 {
+    margin-top: 5px;
+}
+.width-100 {
+    width: 100%;
+    height: 100%;
+}

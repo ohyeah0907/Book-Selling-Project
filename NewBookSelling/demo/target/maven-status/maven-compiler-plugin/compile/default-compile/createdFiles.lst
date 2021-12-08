@@ -1,0 +1,10 @@
+backend\DbUser.class
+backend\JavaServlet\BookReview.class
+backend\JavaServlet\Category.class
+backend\JavaServlet\ViewCart.class
+backend\User.class
+backend\Book.class
+backend\Cart.class
+backend\DbCart.class
+backend\DbBook.class
+backend\JavaServlet\MainPage.class
